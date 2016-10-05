@@ -15,7 +15,7 @@
   <%= passenger_handler -%>BaseURI /
   <% end -%>
   <%= passenger_handler -%>Env <%= @params[:rails_env] %>
-  AllowEncodedSlashes On
+  AllowEncodedSlashes NoDecode
 
   <Directory <%= @params[:docroot] %>>
     Options FollowSymLinks
